@@ -1,0 +1,33 @@
+Config {
+    font = "xft:Ubuntu Mono:size=14",
+    bgColor = "black",
+    fgColor = "gray",
+    position = Top,
+    pickBroadest = True,
+    commands = [
+        Run Battery [
+            "--suffix", "True",
+            "--ppad", "3",
+            "--template", "B: <left>",
+            "--",
+            "-L", "-12",
+            "-l", "red"
+        ] 10,
+        Run Cpu [
+            "--High", "50",
+            "--high", "red",
+            "--suffix", "True",
+            "--ppad", "3",
+            "--template", "C: <total>"
+        ] 10,
+        Run Date "%a %b %_d %k:%M" "date" 10,
+        Run Memory [
+            "--suffix", "True",
+            "--ppad", "3",
+            "--template", "M: <usedratio>"
+        ] 10,
+        Run StdinReader
+    ],
+    alignSep = "}{",
+    template = "%StdinReader% }{ %battery% | %cpu% | %memory% | %date%" 
+}
