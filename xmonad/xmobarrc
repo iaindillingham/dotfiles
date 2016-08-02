@@ -3,7 +3,6 @@ Config {
     bgColor = "black",
     fgColor = "white",
     position = Top,
-    pickBroadest = True,
     commands = [
         Run Battery [
             "--suffix", "True",
