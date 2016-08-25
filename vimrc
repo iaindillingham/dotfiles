@@ -14,3 +14,5 @@ hi clear SpellLocal
 hi SpellLocal cterm=underline
 
 :set tabstop=4 softtabstop=0 expandtab shiftwidth=4 smarttab
+
+set path=$PWD/**
