@@ -20,6 +20,6 @@ main = do
             }
         } `additionalKeys`
         [ ((mod4Mask .|. shiftMask, xK_z), spawn "xscreensaver-command -lock")
-        , ((controlMask, xK_Print), spawn "sleep 0.2; scrot -s")
+        , ((controlMask, xK_Print), spawn "sleep 0.2; scrot -u")
         , ((0, xK_Print), spawn "scrot")
         ]
