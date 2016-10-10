@@ -6,7 +6,7 @@ ANNOTATOR_STORE_HOME='/home/iain/Code/annotator-store'
 
 NESSIE_HOME='/home/iain/Code/nessie'
 
-tmux new-session -s nessie -n annotator -d
+tmux -2 new-session -s nessie -n annotator -d
 
 # Annotator Store
 

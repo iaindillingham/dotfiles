@@ -4,7 +4,7 @@
 
 PROJECT_HOME='/home/iain/Code/wagtail_vega'
 
-tmux new-session -s wagtail_vega -n tox -d
+tmux -2 new-session -s wagtail_vega -n tox -d
 
 # Tox
 
