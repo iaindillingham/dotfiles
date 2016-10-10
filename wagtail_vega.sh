@@ -34,4 +34,4 @@ tmux send-keys -t wagtail_vega "cd ${PROJECT_HOME}" C-m
 
 # Let's go!
 
-tmux attach-session -t wagtail_vega
+tmux -2 attach-session -t wagtail_vega

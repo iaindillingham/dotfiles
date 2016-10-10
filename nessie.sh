@@ -62,4 +62,4 @@ tmux send-keys -t nessie "vex nessie python manage.py shell" C-m
 
 tmux select-window -t nessie:git
 
-tmux attach-session -t nessie
+tmux -2 attach-session -t nessie
