@@ -17,6 +17,8 @@ hi SpellLocal cterm=underline
 
 set path=$PWD/**
 
+filetype plugin on
+
 execute pathogen#infect()
 
 syntax enable
