@@ -18,3 +18,9 @@ hi SpellLocal cterm=underline
 set path=$PWD/**
 
 execute pathogen#infect()
+
+syntax enable
+
+set background=dark
+
+colorscheme solarized
