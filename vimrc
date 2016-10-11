@@ -19,8 +19,6 @@ set path=$PWD/**
 
 filetype plugin on
 
-execute pathogen#infect()
-
 syntax enable
 
 set background=dark
