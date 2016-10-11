@@ -20,7 +20,3 @@ set path=$PWD/**
 filetype plugin on
 
 syntax enable
-
-set background=dark
-
-colorscheme solarized
