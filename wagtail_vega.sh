@@ -4,34 +4,36 @@
 
 PROJECT_HOME='/home/iain/Code/wagtail_vega'
 
-tmux -2 new-session -s wagtail_vega -n tox -d
+PROJECT_NAME=`basename ${PROJECT_HOME}`
+
+tmux -2 new-session -s ${PROJECT_NAME} -n tox -d
 
 # Tox
 
-tmux send-keys -t wagtail_vega "cd ${PROJECT_HOME}" C-m
+tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
 
-tmux send-keys -t wagtail_vega "vex wagtail_vega tox" C-m
+tmux send-keys -t ${PROJECT_NAME} "vex ${PROJECT_NAME} tox" C-m
 
 # Editor
 
-tmux new-window -t wagtail_vega -n editor
+tmux new-window -t ${PROJECT_NAME} -n editor
 
-tmux send-keys -t wagtail_vega "cd ${PROJECT_HOME}" C-m
+tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
 
-tmux send-keys -t wagtail_vega "vim" C-m
+tmux send-keys -t ${PROJECT_NAME} "vim" C-m
 
 # Git
 
-tmux new-window -t wagtail_vega -n git
+tmux new-window -t ${PROJECT_NAME} -n git
 
-tmux send-keys -t wagtail_vega "cd ${PROJECT_HOME}" C-m
+tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
 
-tmux send-keys -t wagtail_vega "git branch" C-m
+tmux send-keys -t ${PROJECT_NAME} "git branch" C-m
 
-tmux split-window -t wagtail_vega -h
+tmux split-window -t ${PROJECT_NAME} -h
 
-tmux send-keys -t wagtail_vega "cd ${PROJECT_HOME}" C-m
+tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
 
 # Let's go!
 
-tmux -2 attach-session -t wagtail_vega
+tmux -2 attach-session -t ${PROJECT_NAME}
