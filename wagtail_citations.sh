@@ -2,7 +2,7 @@
 
 # Preliminaries
 
-PROJECT_HOME='~/Code/wagtail_vega'
+PROJECT_HOME='~/Code/wagtail_citations'
 
 PROJECT_NAME=`basename ${PROJECT_HOME}`
 

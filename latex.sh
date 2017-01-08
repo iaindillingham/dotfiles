@@ -4,7 +4,7 @@
 
 SESSION_NAME='latex'
 
-SESSION_HOME='/home/iain/Documents/t_pattern_analysis'
+SESSION_HOME='~/Documents/t_pattern_analysis'
 
 tmux -2 new-session -s ${SESSION_NAME} -n editor -d
 
