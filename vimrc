@@ -4,7 +4,7 @@
 "Spaces and tabs
 set tabstop=4 "number of spaces per tab
 set expandtab "convert tabs to spaces
-set shiftwidth "number of spaces to apply when using the reindent operations
+set shiftwidth=4 "number of spaces to apply when using the reindent operations
 set softtabstop=4 "number of spaces per tab when editing
 
 "User interface
