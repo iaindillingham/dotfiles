@@ -20,7 +20,11 @@ tmux new-window -t nessie -n django
 
 tmux send-keys -t nessie "cd ${NESSIE_HOME}" C-m
 
-tmux send-keys -t nessie "vex nessie python manage.py runserver 127.0.0.1:8000" C-m
+tmux send-keys -t nessie "export PYTHONPATH=." C-m
+
+tmux send-keys -t nessie "export DJANGO_SETTINGS_MODULE='nessie.settings.dev'" C-m
+
+tmux send-keys -t nessie "vex nessie gunicorn nessie.wsgi:application -w 2 -b 127.0.0.1:8000 -t 600 --reload" C-m
 
 # Tox
 
