@@ -2,23 +2,13 @@
 
 # Preliminaries
 
-ANNOTATOR_STORE_HOME='~/Code/annotator-store'
-
 PROJECT_HOME='~/Code/nessie'
 
 PROJECT_NAME=`basename ${PROJECT_HOME}`
 
-tmux -2 new-session -s ${PROJECT_NAME} -n annotator -d
-
-# Annotator Store
-
-tmux send-keys -t ${PROJECT_NAME} "cd ${ANNOTATOR_STORE_HOME}" C-m
-
-tmux send-keys -t ${PROJECT_NAME} "vex annotator-store python run.py" C-m
+tmux -2 new-session -s ${PROJECT_NAME} -n django -d
 
 # Django
-
-tmux new-window -t ${PROJECT_NAME} -n django
 
 tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
 
