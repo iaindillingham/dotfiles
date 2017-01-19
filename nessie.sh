@@ -4,7 +4,7 @@
 
 ANNOTATOR_STORE_HOME='~/Code/annotator-store'
 
-NESSIE_HOME='~/Code/nessie'
+PROJECT_HOME='~/Code/nessie'
 
 tmux -2 new-session -s nessie -n annotator -d
 
@@ -18,7 +18,7 @@ tmux send-keys -t nessie "vex annotator-store python run.py" C-m
 
 tmux new-window -t nessie -n django
 
-tmux send-keys -t nessie "cd ${NESSIE_HOME}" C-m
+tmux send-keys -t nessie "cd ${PROJECT_HOME}" C-m
 
 tmux send-keys -t nessie "export PYTHONPATH=." C-m
 
@@ -30,7 +30,7 @@ tmux send-keys -t nessie "vex nessie gunicorn nessie.wsgi:application -w 2 -b 12
 
 tmux new-window -t nessie -n tox
 
-tmux send-keys -t nessie "cd ${NESSIE_HOME}" C-m
+tmux send-keys -t nessie "cd ${PROJECT_HOME}" C-m
 
 tmux send-keys -t nessie "vex nessie tox" C-m
 
@@ -38,7 +38,7 @@ tmux send-keys -t nessie "vex nessie tox" C-m
 
 tmux new-window -t nessie -n editor
 
-tmux send-keys -t nessie "cd ${NESSIE_HOME}" C-m
+tmux send-keys -t nessie "cd ${PROJECT_HOME}" C-m
 
 tmux send-keys -t nessie "vim" C-m
 
@@ -46,19 +46,19 @@ tmux send-keys -t nessie "vim" C-m
 
 tmux new-window -t nessie -n git
 
-tmux send-keys -t nessie "cd ${NESSIE_HOME}" C-m
+tmux send-keys -t nessie "cd ${PROJECT_HOME}" C-m
 
 tmux send-keys -t nessie "git branch" C-m
 
 tmux split-window -t nessie -h
 
-tmux send-keys -t nessie "cd ${NESSIE_HOME}" C-m
+tmux send-keys -t nessie "cd ${PROJECT_HOME}" C-m
 
 # Shell
 
 tmux new-window -t nessie -n shell
 
-tmux send-keys -t nessie "cd ${NESSIE_HOME}" C-m
+tmux send-keys -t nessie "cd ${PROJECT_HOME}" C-m
 
 tmux send-keys -t nessie "vex nessie python manage.py shell" C-m
 
