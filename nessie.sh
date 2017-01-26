@@ -6,29 +6,9 @@ PROJECT_HOME='~/Code/nessie'
 
 PROJECT_NAME=`basename ${PROJECT_HOME}`
 
-tmux -2 new-session -s ${PROJECT_NAME} -n django -d
-
-# Django
-
-tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
-
-tmux send-keys -t ${PROJECT_NAME} "export PYTHONPATH=." C-m
-
-tmux send-keys -t ${PROJECT_NAME} "export DJANGO_SETTINGS_MODULE='nessie.settings.dev'" C-m
-
-tmux send-keys -t ${PROJECT_NAME} "vex ${PROJECT_NAME} gunicorn nessie.wsgi:application -w 2 -b 127.0.0.1:8000 -t 600 --reload" C-m
-
-# Tox
-
-tmux new-window -t ${PROJECT_NAME} -n tox
-
-tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
-
-tmux send-keys -t ${PROJECT_NAME} "vex ${PROJECT_NAME} tox" C-m
+tmux -2 new-session -s ${PROJECT_NAME} -n editor -d
 
 # Editor
-
-tmux new-window -t ${PROJECT_NAME} -n editor
 
 tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
 
@@ -53,6 +33,26 @@ tmux new-window -t ${PROJECT_NAME} -n shell
 tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
 
 tmux send-keys -t ${PROJECT_NAME} "vex ${PROJECT_NAME} python manage.py shell" C-m
+
+# Tox
+
+tmux new-window -t ${PROJECT_NAME} -n tox
+
+tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
+
+tmux send-keys -t ${PROJECT_NAME} "vex ${PROJECT_NAME} tox" C-m
+
+# Django
+
+tmux new-window -t ${PROJECT_NAME} -n django
+
+tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
+
+tmux send-keys -t ${PROJECT_NAME} "export PYTHONPATH=." C-m
+
+tmux send-keys -t ${PROJECT_NAME} "export DJANGO_SETTINGS_MODULE='nessie.settings.dev'" C-m
+
+tmux send-keys -t ${PROJECT_NAME} "vex ${PROJECT_NAME} gunicorn nessie.wsgi:application -w 2 -b 127.0.0.1:8000 -t 600 --reload" C-m
 
 # Let's go!
 
