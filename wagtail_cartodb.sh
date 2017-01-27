@@ -2,7 +2,12 @@
 
 # Preliminaries
 
-PROJECT_HOME='~/Code/wagtail_cartodb'
+PROJECT_HOME=$1
+
+if [ -ne ${PROJECT_HOME} ]; then
+    echo 'wagtail_cartodb.sh PROJECT_HOME'
+    exit 1
+fi
 
 PROJECT_NAME=`basename ${PROJECT_HOME}`
 
