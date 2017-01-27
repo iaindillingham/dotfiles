@@ -5,7 +5,7 @@
 PROJECT_HOME=$1
 
 if [ -ne ${PROJECT_HOME} ]; then
-    echo 'wagtail_cartodb.sh PROJECT_HOME'
+    echo 'django.sh PROJECT_HOME'
     exit 1
 fi
 
