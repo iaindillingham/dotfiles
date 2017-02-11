@@ -26,14 +26,6 @@ tmux split-window -t ${PROJECT_NAME} -h
 
 tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
 
-# Shell
-
-tmux new-window -t ${PROJECT_NAME} -n shell
-
-tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
-
-tmux send-keys -t ${PROJECT_NAME} "vex ${PROJECT_NAME} python manage.py shell" C-m
-
 # Tox
 
 tmux new-window -t ${PROJECT_NAME} -n tox
@@ -41,6 +33,14 @@ tmux new-window -t ${PROJECT_NAME} -n tox
 tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
 
 tmux send-keys -t ${PROJECT_NAME} "vex ${PROJECT_NAME} tox" C-m
+
+# Shell
+
+tmux new-window -t ${PROJECT_NAME} -n shell
+
+tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
+
+tmux send-keys -t ${PROJECT_NAME} "vex ${PROJECT_NAME} python manage.py shell" C-m
 
 # Django
 
