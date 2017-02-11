@@ -39,6 +39,26 @@ tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
 
 tmux send-keys -t ${PROJECT_NAME} "vex ${PROJECT_NAME} tox" C-m
 
+if [ -e "${PROJECT_HOME}/manage.py" ]; then
+
+    # Shell
+
+    tmux new-window -t ${PROJECT_NAME} -n shell
+
+    tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
+
+    tmux send-keys -t ${PROJECT_NAME} "vex ${PROJECT_NAME} python manage.py shell" C-m
+
+    # Django
+
+    tmux new-window -t ${PROJECT_NAME} -n django
+
+    tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
+
+    tmux send-keys -t ${PROJECT_NAME} "vex ${PROJECT_NAME} python manage.py runserver" C-m
+
+fi
+
 # Let's go!
 
 tmux select-window -t ${PROJECT_NAME}:git
