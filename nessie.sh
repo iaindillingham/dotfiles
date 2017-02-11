@@ -48,7 +48,7 @@ tmux new-window -t ${PROJECT_NAME} -n django
 
 tmux send-keys -t ${PROJECT_NAME} "cd ${PROJECT_HOME}" C-m
 
-tmux send-keys -t ${PROJECT_NAME} "export PYTHONPATH=." C-m
+tmux send-keys -t ${PROJECT_NAME} "export PYTHONPATH=`pwd`" C-m
 
 tmux send-keys -t ${PROJECT_NAME} "export DJANGO_SETTINGS_MODULE='nessie.settings.dev'" C-m
 
