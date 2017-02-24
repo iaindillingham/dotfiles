@@ -14,6 +14,7 @@ set colorcolumn=80 "highlight the given column
 set cursorline "highlight current line
 set showmatch "highlight matching braces
 set number "show line numbers
+set relativenumber "show relative line numbers
 set wildmenu "autocomplete command menu
 
 "Spelling
