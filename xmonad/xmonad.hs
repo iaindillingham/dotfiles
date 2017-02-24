@@ -8,7 +8,7 @@ import System.IO
 main = do
     xmproc <- spawnPipe "xmobar ~/.xmonad/xmobarrc"
     xmonad $ defaultConfig
-        { terminal = "gnome-terminal"
+        { terminal = "terminator"
         , manageHook = manageDocks <+> manageHook defaultConfig
         , layoutHook = avoidStruts  $  layoutHook defaultConfig
         , logHook = dynamicLogWithPP xmobarPP
