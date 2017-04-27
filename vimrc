@@ -39,3 +39,4 @@ set path=$PWD/**
 
 "Miscellaneous
 filetype plugin on
+filetype indent on
