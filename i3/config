@@ -1,0 +1,125 @@
+# Set the modifier key. Mod1 is the Alt key. Mod4 is the Windows key.
+set $mod Mod4
+
+# Set the font for window titles and i3bar.
+font pango:DejaVu Sans Mono 11
+
+# Use Mouse+$mod to drag floating windows to their desired position.
+floating_modifier $mod
+
+# Start a terminal.
+bindsym $mod+Return exec i3-sensible-terminal
+
+# Kill the focused window.
+bindsym $mod+Shift+q kill
+
+# Start dmenu.
+# bindsym $mod+p exec dmenu_run
+bindsym $mod+p exec --no-startup-id i3-dmenu-desktop
+
+# Change focus.
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# Move the focused window.
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# Split horizontal.
+# bindsym $mod+h split h
+
+# Split vertical.
+# bindsym $mod+v split v
+
+# Toggle fullscreen mode.
+bindsym $mod+f fullscreen toggle
+
+# Change layout.
+bindsym $mod+s layout stacking
+bindsym $mod+w layout tabbed
+bindsym $mod+e layout toggle split
+
+# Toggle either tiling or floating.
+bindsym $mod+Shift+space floating toggle
+
+# Change focus between either tiling or floating windows.
+bindsym $mod+space focus mode_toggle
+
+# Focus the parent container.
+bindsym $mod+a focus parent
+
+# Focus the child container.
+bindsym $mod+d focus child
+
+# Switch to the given workspace.
+bindsym $mod+1 workspace 1
+bindsym $mod+2 workspace 2
+bindsym $mod+3 workspace 3
+bindsym $mod+4 workspace 4
+bindsym $mod+5 workspace 5
+bindsym $mod+6 workspace 6
+bindsym $mod+7 workspace 7
+bindsym $mod+8 workspace 8
+bindsym $mod+9 workspace 9
+bindsym $mod+0 workspace 10
+
+# Move the focused container to the given workspace.
+bindsym $mod+Shift+1 move container to workspace 1
+bindsym $mod+Shift+2 move container to workspace 2
+bindsym $mod+Shift+3 move container to workspace 3
+bindsym $mod+Shift+4 move container to workspace 4
+bindsym $mod+Shift+5 move container to workspace 5
+bindsym $mod+Shift+6 move container to workspace 6
+bindsym $mod+Shift+7 move container to workspace 7
+bindsym $mod+Shift+8 move container to workspace 8
+bindsym $mod+Shift+9 move container to workspace 9
+bindsym $mod+Shift+0 move container to workspace 10
+
+# Reload the configuration file.
+bindsym $mod+Shift+c reload
+
+# Restart i3 inplace.
+bindsym $mod+Shift+r restart
+
+# Exit i3.
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'Do you really want to exit i3?' -b 'Yes' 'i3-msg exit'"
+
+# Resize the window.
+mode "resize" {
+    # Pressing left will shrink the window's width.
+    # Pressing right will grow the window's width.
+    # Pressing up will shrink the window's height.
+    # Pressing down will grow the window's height.
+    bindsym j resize shrink width 10 px or 10 ppt
+    bindsym k resize grow height 10 px or 10 ppt
+    bindsym l resize shrink height 10 px or 10 ppt
+    bindsym semicolon resize grow width 10 px or 10 ppt
+
+    # Reset.
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+# Hide container borders adjacent to the screen edges.
+hide_edge_borders both
+
+# Start xscreensaver.
+exec xscreensaver -nosplash &
+bindsym $mod+z exec xscreensaver-command -lock
+
+# Remap the context key to the Windows key.
+exec xmodmap -e "keycode 135 = Super_L"
+
+# Start dropbox.
+exec dropbox start
+
+# Start i3bar.
+bar {
+    status_command i3status
+    tray_output primary
+}
