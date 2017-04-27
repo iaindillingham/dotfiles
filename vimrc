@@ -9,6 +9,7 @@ set rtp+=~/.vim/bundle/Vundle.vim "add Vundle.vim to the runtime path
 call vundle#begin() "place Plugin commands after here
 
 Plugin 'VundleVim/Vundle.vim'
+Plugin 'benmills/vimux'
 
 call vundle#end() "place Plugin commands before here
 
@@ -47,6 +48,10 @@ hi SpellLocal cterm=underline
 set incsearch "incremental search
 set hlsearch "highlight matches
 set path=$PWD/**
+
+"Vimux
+map <Leader>vp :VimuxPromptCommand<CR>
+map <Leader>vl :VimuxRunLastCommand<CR>
 
 "Miscellaneous
 filetype plugin on
