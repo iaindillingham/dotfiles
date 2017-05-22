@@ -1,0 +1,10 @@
+[user]
+	email = iain.dillingham@maplecroft.com
+	name = Iain Dillingham
+[core]
+	editor = vi
+	excludesfile = ~/.global_gitignore
+[commit]
+	template = ~/.global_gitmessage
+[push]
+	default = simple
