@@ -33,3 +33,9 @@ ln -fsv "$DOTFILES_DIR/vimrc" "$HOME/.vimrc"
 # Vundle
 git clone -v https://github.com/VundleVim/Vundle.vim.git "$HOME/.vim/bundle/Vundle.vim"
 vim +PluginInstall +qall
+
+# HipChat
+sudo sh -c 'echo "deb https://atlassian.artifactoryonline.com/atlassian/hipchat-apt-client $(lsb_release -c -s) main" > /etc/apt/sources.list.d/atlassian-hipchat4.list'
+wget -O - https://atlassian.artifactoryonline.com/atlassian/api/gpg/key/public | sudo apt-key add -
+sudo apt update
+sudo apt --yes install hipchat4
