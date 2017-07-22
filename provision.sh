@@ -11,7 +11,7 @@ sudo apt --yes upgrade
 sudo apt --yes autoremove
 
 # Dependencies
-sudo apt --yes install git terminator tmux vim xscreensaver
+sudo apt --yes install git terminator tmux vim xclip xscreensaver
 sudo apt --yes install i3 suckless-tools
 
 # Dotfiles
