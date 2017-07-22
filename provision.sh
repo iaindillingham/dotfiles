@@ -29,8 +29,6 @@ ln -fsv "$DOTFILES_DIR/latex.sh" "$HOME/latex.sh"
 ln -fsv "$DOTFILES_DIR/terminator" "$HOME/.config"
 ln -fsv "$DOTFILES_DIR/tmux.conf" "$HOME/.tmux.conf"
 ln -fsv "$DOTFILES_DIR/vimrc" "$HOME/.vimrc"
-ln -fsv "$DOTFILES_DIR/xmonad/" "$HOME/.xmonad"
-ln -fsv "$DOTFILES_DIR/Xresources" "$HOME/.Xresources"
 
 # Vundle
 git clone -v https://github.com/VundleVim/Vundle.vim.git "$HOME/.vim/bundle/Vundle.vim"
