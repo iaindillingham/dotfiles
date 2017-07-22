@@ -39,3 +39,6 @@ sudo sh -c 'echo "deb https://atlassian.artifactoryonline.com/atlassian/hipchat-
 wget -O - https://atlassian.artifactoryonline.com/atlassian/api/gpg/key/public | sudo apt-key add -
 sudo apt update
 sudo apt --yes install hipchat4
+
+# NVM
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
