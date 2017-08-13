@@ -19,10 +19,6 @@ set tabstop=4 "number of spaces per tab
 set shiftwidth=4 "number of spaces to apply when using the reindent operations
 set softtabstop=4 "number of spaces per tab when editing
 
-autocmd FileType html,javascript setlocal tabstop=2
-autocmd FileType html,javascript setlocal shiftwidth=2
-autocmd FileType html,javascript setlocal softtabstop=2
-
 "User interface
 set background=dark
 syntax enable "highlight syntax
