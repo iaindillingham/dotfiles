@@ -17,3 +17,7 @@ preview() {
 clipboard() {
     cat ${1} | xclip -i -selection clipboard
 }
+
+upload_lib() {
+    scp ${1} hercules:/opt/www/deployment_libs
+}
