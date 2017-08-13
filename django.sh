@@ -7,7 +7,7 @@ PROJECT_HOME=$1
 # If the first argument is either the empty string or not a directory,
 # then exit.
 if [ ! -n "$1" ] || [ ! -d "$1" ]; then
-    echo 'django.sh PROJECT_HOME'
+    echo "$0 PROJECT_HOME"
     exit 1
 fi
 
