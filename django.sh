@@ -2,14 +2,14 @@
 
 # Preliminaries
 
-PROJECT_HOME=$1
-
 # If the first argument is either the empty string or not a directory,
 # then exit.
 if [ ! -n "$1" ] || [ ! -d "$1" ]; then
     echo "$0 PROJECT_HOME"
     exit 1
 fi
+
+PROJECT_HOME=$1
 
 PROJECT_NAME=`basename ${PROJECT_HOME}`
 
