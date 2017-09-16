@@ -14,6 +14,9 @@ sudo apt --yes autoremove
 sudo apt --yes install chromium-browser curl i3 git python-pip suckless-tools \
     terminator tmux vim xclip xscreensaver
 
+# Python
+pip install --upgrade pip
+
 # Dotfiles
 mkdir -v $CODE_DIR
 git clone -v git@github.com:iaindillingham/dotfiles.git $DOTFILES_DIR
