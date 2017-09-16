@@ -16,6 +16,8 @@ sudo apt --yes install chromium-browser curl i3 git python-pip suckless-tools \
 
 # Python
 pip install --upgrade pip
+pip install --user vex
+mkdir -v "$HOME/.virtualenvs"
 
 # Dotfiles
 mkdir -v $CODE_DIR
