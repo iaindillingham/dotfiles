@@ -11,8 +11,8 @@ sudo apt --yes upgrade
 sudo apt --yes autoremove
 
 # Dependencies
-sudo apt --yes install chromium-browser curl i3 git python-pip suckless-tools \
-    terminator tmux vim xclip xscreensaver
+sudo apt --yes install chromium-browser curl i3 git postgresql python-pip \
+    suckless-tools terminator tmux vim xclip xscreensaver
 
 # Python
 pip install --upgrade pip
