@@ -11,10 +11,11 @@ sudo apt --yes upgrade
 sudo apt --yes autoremove
 
 # Dependencies
-sudo apt --yes install chromium-browser curl i3 git postgresql python-pip \
+sudo apt --yes install chromium-browser curl i3 git postgresql \
     suckless-tools terminator tmux vim xclip xscreensaver
 
 # Python
+sudo apt --yes install python-pip
 pip install --upgrade pip
 pip install --user vex
 mkdir -v "$HOME/.virtualenvs"
