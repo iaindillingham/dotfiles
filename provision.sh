@@ -11,8 +11,8 @@ sudo apt --yes upgrade
 sudo apt --yes autoremove
 
 # Dependencies
-sudo apt --yes install curl git terminator tmux vim xclip xscreensaver
-sudo apt --yes install i3 suckless-tools
+sudo apt --yes install curl i3 git suckless-tools \
+    terminator tmux vim xclip xscreensaver
 
 # Dotfiles
 mkdir -v $CODE_DIR
