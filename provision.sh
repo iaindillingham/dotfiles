@@ -11,8 +11,11 @@ sudo apt --yes upgrade
 sudo apt --yes autoremove
 
 # Dependencies
-sudo apt --yes install chromium-browser curl i3 git postgresql \
+sudo apt --yes install chromium-browser curl i3 git \
     suckless-tools terminator tmux vim xclip xscreensaver
+
+# PostgreSQL
+sudo apt --yes install postgresql-9.5-postgis-2.2 postgresql-server-dev-9.5
 
 # Python
 sudo apt --yes install python-pip python3-pip
