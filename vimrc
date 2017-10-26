@@ -51,3 +51,4 @@ map <Leader>vl :VimuxRunLastCommand<CR>
 
 "Miscellaneous
 filetype plugin on
+filetype indent on
