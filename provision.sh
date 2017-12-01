@@ -15,8 +15,8 @@ sudo apt --yes upgrade
 sudo apt --yes autoremove
 
 # Dependencies
-sudo apt --yes install chromium-browser curl firefox i3 git \
-    openssh-server suckless-tools terminator tmux vim xclip xscreensaver
+sudo apt --yes install build-essential chromium-browser curl firefox i3 git \
+    htop nginx openssh-server suckless-tools terminator tmux vim xclip xscreensaver
 
 # PostgreSQL
 sudo apt --yes install postgresql-9.5-postgis-2.2 postgresql-server-dev-9.5
