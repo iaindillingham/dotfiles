@@ -14,9 +14,23 @@ sudo apt update
 sudo apt --yes upgrade
 sudo apt --yes autoremove
 
-# Dependencies
-sudo apt --yes install build-essential chromium-browser curl firefox i3 git \
-    htop nginx openssh-server suckless-tools terminator tmux vim xclip xscreensaver
+# Miscellaneous Dependencies
+sudo apt --yes install \
+    build-essential \
+    chromium-browser \
+    curl \
+    firefox \
+    git \
+    htop \
+    i3 \
+    nginx \
+    openssh-server \
+    suckless-tools \
+    terminator \
+    tmux \
+    vim \
+    xclip \
+    xscreensaver
 
 # PostgreSQL
 sudo apt --yes install postgresql-9.5-postgis-2.2 postgresql-server-dev-9.5
