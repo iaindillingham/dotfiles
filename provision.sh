@@ -6,6 +6,10 @@ CODE_DIR="$HOME/Code"
 DOTFILES_DIR="$CODE_DIR/dotfiles"
 
 # Preliminaries
+if ! [ "$HOME/.ssh/id_rsa" ]; then
+    echo "Missing private key"
+fi
+
 sudo apt update
 sudo apt --yes upgrade
 sudo apt --yes autoremove
