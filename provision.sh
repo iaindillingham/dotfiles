@@ -24,9 +24,14 @@ sudo apt --yes install postgresql-9.5-postgis-2.2 postgresql-server-dev-9.5
 # Python
 sudo apt --yes install python-pip python3-pip
 pip install --upgrade pip
-pip install --user vex
 pip3 install --upgrade pip
+
+# Vex
+pip install --user vex
 pip3 install --user vex
+echo '' >> $HOME/.profile
+echo '# Include command-line Python tools' >> $HOME/.profile
+echo 'PATH="$PATH:$HOME/.local/bin"' >> $HOME/.profile
 mkdir -v "$HOME/.virtualenvs"
 
 # Dotfiles
