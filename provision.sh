@@ -25,6 +25,7 @@ sudo apt --yes install \
     i3 \
     nginx \
     openssh-server \
+    pasaffe \
     suckless-tools \
     terminator \
     tmux \
