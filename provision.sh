@@ -30,6 +30,7 @@ sudo apt --yes install \
     terminator \
     tmux \
     vim \
+    virtualbox \
     xclip \
     xscreensaver
 
