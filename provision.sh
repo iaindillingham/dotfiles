@@ -84,5 +84,9 @@ wget -O - https://atlassian.artifactoryonline.com/atlassian/api/gpg/key/public |
 sudo apt update
 sudo apt --yes install hipchat4
 
+# Node.js
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt --yes install nodejs
+
 # NVM
 curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.33.2/install.sh | bash
