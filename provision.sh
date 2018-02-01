@@ -32,7 +32,9 @@ sudo apt --yes install \
     vim \
     virtualbox \
     xclip \
-    xscreensaver
+    xscreensaver \
+    xscreensaver-gl \
+    xscreensaver-gl-extra
 
 # PostgreSQL
 sudo apt --yes install postgresql-9.5-postgis-2.2 postgresql-server-dev-9.5
