@@ -25,6 +25,7 @@ sudo apt --yes install \
     i3 \
     nginx \
     openssh-server \
+    openvpn \
     pasaffe \
     suckless-tools \
     terminator \
