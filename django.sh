@@ -13,7 +13,7 @@ PROJECT_ROOT_DIR=$1
 
 PROJECT_NAME=`basename ${PROJECT_ROOT_DIR}`
 
-tmux -2 new-session -s ${PROJECT_NAME} -n editor -d
+tmux -2 new-session -s ${PROJECT_NAME} -n editor -d -c ${PROJECT_ROOT_DIR}
 
 # Editor
 
