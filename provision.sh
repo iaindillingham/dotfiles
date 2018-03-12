@@ -21,6 +21,7 @@ sudo apt --yes install \
     curl \
     firefox \
     git \
+    gitk \
     htop \
     i3 \
     nginx \
