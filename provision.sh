@@ -30,6 +30,7 @@ sudo apt --yes install \
     pasaffe \
     suckless-tools \
     terminator \
+    tig \
     tmux \
     vim \
     virtualbox \
