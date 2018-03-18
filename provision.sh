@@ -24,6 +24,7 @@ sudo apt --yes install \
     gitk \
     htop \
     i3 \
+    mosh \
     nginx \
     openssh-server \
     openvpn \
