@@ -53,6 +53,9 @@ sudo apt --yes install python-pip python3-pip
 pip install --upgrade pip
 pip3 install --upgrade pip
 
+mkdir -pv "$HOME/.config/pip"
+ln -fsv "$DOTFILES_DIR/pip.conf" "$HOME/.config/pip"
+
 # Vex
 pip install --user vex
 pip3 install --user vex
