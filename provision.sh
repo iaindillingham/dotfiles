@@ -43,8 +43,6 @@ sudo apt --yes install \
 sudo apt --yes install postgresql-9.5-postgis-2.2 postgresql-server-dev-9.5
 
 # MySQL
-sudo debconf-set-selections <<< 'mysql-server-5.7 mysql-server/root_password password root'
-sudo debconf-set-selections <<< 'mysql-server-5.7 mysql-server/root_password_again password root'
 sudo apt --yes install mysql-server-5.7 libmysqlclient-dev
 mysql --user=root --password=root --execute="
     CREATE USER '`whoami`'@'localhost';
