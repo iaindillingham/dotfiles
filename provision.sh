@@ -35,6 +35,7 @@ sudo apt --yes install \
     tmux \
     vim \
     virtualbox \
+    virtualbox-ext-pack \
     xclip \
     xscreensaver \
     xscreensaver-gl \
