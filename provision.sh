@@ -24,6 +24,7 @@ sudo apt --yes install \
     gitk \
     htop \
     i3 \
+    mosh \
     nginx \
     openssh-server \
     openvpn \
@@ -34,6 +35,7 @@ sudo apt --yes install \
     tmux \
     vim \
     virtualbox \
+    virtualbox-ext-pack \
     xclip \
     xscreensaver \
     xscreensaver-gl \
