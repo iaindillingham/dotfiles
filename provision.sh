@@ -33,7 +33,7 @@ sudo apt --yes install \
     terminator \
     tig \
     tmux \
-    vim \
+    vim-gtk \
     virtualbox \
     virtualbox-ext-pack \
     xclip \
