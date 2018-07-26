@@ -29,6 +29,7 @@ sudo apt --yes install \
     openssh-server \
     openvpn \
     pasaffe \
+    pwgen \
     suckless-tools \
     terminator \
     tig \
