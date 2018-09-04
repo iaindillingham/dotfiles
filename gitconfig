@@ -3,8 +3,8 @@
 	name = Iain Dillingham
 [core]
 	editor = vi
-	excludesfile = ~/.global_gitignore
+	excludesfile = ~/.gitignore
 [commit]
-	template = ~/.global_gitmessage
+	template = ~/.gitmessage
 [push]
 	default = simple
