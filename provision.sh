@@ -29,6 +29,8 @@ sudo apt --yes install \
     vim \
     xclip
 
+sudo snap install slack --classic
+
 # Python
 sudo apt --yes install python3-pip
 
