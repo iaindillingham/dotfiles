@@ -32,7 +32,6 @@ sudo apt --yes install \
 
 # Python
 sudo apt --yes install python3-pip
-pip3 install --upgrade pip
 
 # Vex
 pip3 install --user vex
