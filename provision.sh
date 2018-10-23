@@ -21,7 +21,6 @@ sudo apt --yes install \
     git \
     htop \
     mosh \
-    openssh-server \
     pasaffe \
     pwgen \
     terminator \
