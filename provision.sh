@@ -30,6 +30,7 @@ sudo apt --yes install \
     xclip
 
 sudo snap install slack --classic
+sudo snap install spotify
 
 # Python
 sudo apt --yes install python3-pip
