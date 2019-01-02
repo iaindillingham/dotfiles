@@ -21,6 +21,7 @@ sudo apt --yes install \
     git \
     htop \
     mosh \
+    most \
     pasaffe \
     pwgen \
     terminator \
