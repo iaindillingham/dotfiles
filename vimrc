@@ -10,6 +10,7 @@ call vundle#begin() "place Plugin commands after here
 
 Plugin 'benmills/vimux'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'lervag/vimtex'
 Plugin 'pangloss/vim-javascript'
 Plugin 'VundleVim/Vundle.vim'
 
