@@ -8,10 +8,10 @@ set rtp+=~/.vim/bundle/Vundle.vim "add Vundle.vim to the runtime path
 
 call vundle#begin() "place Plugin commands after here
 
-Plugin 'VundleVim/Vundle.vim'
 Plugin 'benmills/vimux'
-Plugin 'pangloss/vim-javascript'
 Plugin 'leafgarland/typescript-vim'
+Plugin 'pangloss/vim-javascript'
+Plugin 'VundleVim/Vundle.vim'
 
 call vundle#end() "place Plugin commands before here
 
