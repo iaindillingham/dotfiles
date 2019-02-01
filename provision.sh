@@ -17,6 +17,7 @@ sudo apt --yes autoremove
 # Miscellaneous Dependencies
 sudo apt --yes install \
     build-essential \
+    chromium-chromedriver \
     curl \
     git \
     htop \
@@ -42,6 +43,11 @@ echo '' >> $HOME/.profile
 echo '# Include command-line Python tools' >> $HOME/.profile
 echo 'PATH="$PATH:$HOME/.local/bin"' >> $HOME/.profile
 mkdir -v "$HOME/.virtualenvs"
+
+# Chromedriver
+echo '' >> $HOME/.profile
+echo '# Include chromedriver' >> $HOME/.profile
+echo 'PATH="$PATH:/usr/lib/chromium-browser"' >> $HOME/.profile
 
 # Dotfiles
 mkdir -v $CODE_DIR
