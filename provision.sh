@@ -25,6 +25,7 @@ sudo apt --yes install \
     most \
     pasaffe \
     pwgen \
+    libsnappy-dev \
     sshuttle \
     terminator \
     tig \
