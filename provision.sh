@@ -30,6 +30,7 @@ sudo apt --yes install \
     terminator \
     tig \
     tmux \
+    tree \
     vim \
     xclip
 
