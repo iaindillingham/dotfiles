@@ -25,6 +25,8 @@ sudo apt --yes install \
     most \
     pasaffe \
     pwgen \
+    python3.7 \
+    libpython3.7-dev \
     sshuttle \
     terminator \
     tig \
