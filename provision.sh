@@ -17,7 +17,6 @@ sudo apt --yes autoremove
 # Miscellaneous Dependencies
 sudo apt --yes install \
     build-essential \
-    chromium-chromedriver \
     curl \
     git \
     htop \
@@ -25,7 +24,6 @@ sudo apt --yes install \
     most \
     pasaffe \
     pwgen \
-    libsnappy-dev \
     sshuttle \
     terminator \
     tig \
@@ -33,24 +31,6 @@ sudo apt --yes install \
     tree \
     vim \
     xclip
-
-sudo snap install slack --classic
-sudo snap install spotify
-
-# Python
-sudo apt --yes install python3-pip
-
-# Vex
-pip3 install --user vex
-echo '' >> $HOME/.profile
-echo '# Include command-line Python tools' >> $HOME/.profile
-echo 'PATH="$PATH:$HOME/.local/bin"' >> $HOME/.profile
-mkdir -v "$HOME/.virtualenvs"
-
-# Chromedriver
-echo '' >> $HOME/.profile
-echo '# Include chromedriver' >> $HOME/.profile
-echo 'PATH="$PATH:/usr/lib/chromium-browser"' >> $HOME/.profile
 
 # Dotfiles
 mkdir -v $CODE_DIR
