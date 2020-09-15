@@ -27,8 +27,10 @@ sudo apt --yes install \
     pwgen \
     python3.6 \
     libpython3.6-dev \
+    python3.6-venv \
     python3.7 \
     libpython3.7-dev \
+    python3.7-venv \
     sshuttle \
     terminator \
     tig \
