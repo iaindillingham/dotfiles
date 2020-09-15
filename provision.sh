@@ -18,6 +18,7 @@ sudo apt --yes autoremove
 sudo apt --yes install \
     build-essential \
     curl \
+    direnv \
     git \
     htop \
     mosh \
