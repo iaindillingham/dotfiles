@@ -52,3 +52,4 @@ map <Leader>vl :VimuxRunLastCommand<CR>
 "Miscellaneous
 filetype plugin on
 filetype indent on
+set t_Co=256 "256 colour mode
