@@ -7,6 +7,7 @@
 	pager = most
 [commit]
 	template = ~/.gitmessage
+	gpgsign = true
 [push]
 	default = simple
 [filter "lfs"]
