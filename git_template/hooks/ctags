@@ -1,0 +1,9 @@
+#!/bin/sh
+
+set -e
+
+git ls-files | \
+    $(which ctags) \
+    -L - \
+    --language-force=python \
+    --exclude=README.*
