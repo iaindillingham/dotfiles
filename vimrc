@@ -22,7 +22,7 @@ set softtabstop=4 "number of spaces per tab when editing
 "User interface
 set background=dark
 syntax enable "highlight syntax
-set colorcolumn=80 "highlight the given column
+set colorcolumn=89 "highlight the given column
 set cursorline "highlight current line
 set showmatch "highlight matching braces
 set number "show line numbers
