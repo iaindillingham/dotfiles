@@ -1,18 +1,6 @@
 "With thanks to Doug Black for 'A Good Vimrc':
 "https://dougblack.io/words/a-good-vimrc.html
 
-"Vundle
-set nocompatible "disable vi compatibility
-filetype off "disable file type detection
-set rtp+=~/.vim/bundle/Vundle.vim "add Vundle.vim to the runtime path
-
-call vundle#begin() "place Plugin commands after here
-
-Plugin 'cespare/vim-toml'
-Plugin 'VundleVim/Vundle.vim'
-
-call vundle#end() "place Plugin commands before here
-
 "Spaces and tabs
 set expandtab "convert tabs to spaces
 set tabstop=4 "number of spaces per tab
