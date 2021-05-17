@@ -9,6 +9,7 @@ set softtabstop=4 "number of spaces per tab when editing
 
 "User interface
 set background=dark
+set t_Co=256 "256 colour mode
 syntax enable "highlight syntax
 set colorcolumn=89 "highlight the given column
 set cursorline "highlight current line
@@ -36,4 +37,3 @@ set path=$PWD/**
 "Miscellaneous
 filetype plugin on
 filetype indent on
-set t_Co=256 "256 colour mode
