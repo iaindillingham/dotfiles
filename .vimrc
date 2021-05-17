@@ -33,10 +33,6 @@ set incsearch "incremental search
 set hlsearch "highlight matches
 set path=$PWD/**
 
-"Vimux
-map <Leader>vp :VimuxPromptCommand<CR>
-map <Leader>vl :VimuxRunLastCommand<CR>
-
 "Miscellaneous
 filetype plugin on
 filetype indent on
