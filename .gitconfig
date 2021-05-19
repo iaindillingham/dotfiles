@@ -1,7 +1,7 @@
 [user]
 	email = iain@dillingham.me.uk
 	name = Iain Dillingham
-	signingkey = 957E6928FDA2BDFE51B67F1FC9172B30E47A1D7F
+	signingkey = D27258B3AC8C691A
 [core]
 	editor = vi
 	excludesfile = ~/.gitignore
