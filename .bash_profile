@@ -17,3 +17,6 @@ fi
 export PATH="$PATH:/Users/iaindillingham/.local/bin"
 export PATH="$PATH:/Users/iaindillingham/Library/Python/3.8/bin"
 eval "$(register-python-argcomplete pipx)"
+
+# Put Homebrew curl before macOS curl in my PATH
+export PATH="/usr/local/opt/curl/bin:$PATH"
