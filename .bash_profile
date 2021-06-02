@@ -20,3 +20,7 @@ eval "$(register-python-argcomplete pipx)"
 
 # Put Homebrew curl before macOS curl in my PATH
 export PATH="/usr/local/opt/curl/bin:$PATH"
+
+# Put Poetry in my path
+# https://python-poetry.org/docs/#installation
+export PATH="$HOME/.poetry/bin:$PATH"
