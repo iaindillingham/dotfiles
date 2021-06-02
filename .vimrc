@@ -41,6 +41,9 @@ call minpac#add('k-takata/minpac', {'type': 'opt'})
 command! PacClean call minpac#clean()
 command! PacUpdate call minpac#update()
 
+"Plugins
+call minpac#add('cespare/vim-toml')
+
 "Miscellaneous
 filetype plugin on
 filetype indent on
