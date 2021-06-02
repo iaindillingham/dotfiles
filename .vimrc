@@ -34,6 +34,13 @@ set incsearch "incremental search
 set hlsearch "highlight matches
 set path=$PWD/**
 
+"Minpac, a minimal package manager
+packadd minpac
+call minpac#init()
+call minpac#add('k-takata/minpac', {'type': 'opt'})
+command! PacClean call minpac#clean()
+command! PacUpdate call minpac#update()
+
 "Miscellaneous
 filetype plugin on
 filetype indent on
