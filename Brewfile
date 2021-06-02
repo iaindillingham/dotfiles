@@ -1,6 +1,7 @@
 brew "bash"
 brew "bash-completion@2"
 brew "ctags"
+brew "curl"
 brew "git"
 brew "htop"
 brew "mosh"
