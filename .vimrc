@@ -43,6 +43,7 @@ command! PacUpdate call minpac#update()
 
 "Plugins
 call minpac#add('cespare/vim-toml')
+call minpac#add('tpope/vim-surround')
 
 "Miscellaneous
 filetype plugin on
