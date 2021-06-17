@@ -6,6 +6,8 @@ set expandtab "convert tabs to spaces
 set tabstop=4 "number of spaces per tab
 set shiftwidth=4 "number of spaces to apply when using the reindent operations
 set softtabstop=4 "number of spaces per tab when editing
+set textwidth=89 "maximum width of inserted text
+set autoindent "copy indent from current line when starting a new line
 
 "User interface
 set background=dark
