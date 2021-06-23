@@ -24,3 +24,8 @@ export PATH="/usr/local/opt/curl/bin:$PATH"
 # Put Poetry in my path
 # https://python-poetry.org/docs/#installation
 export PATH="$HOME/.poetry/bin:$PATH"
+
+# https://github.com/nvm-sh/nvm
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
