@@ -1,0 +1,23 @@
+session_name: new-session
+start_directory: $PWD
+shell_command_before:
+  - "[[ -f .venv/bin/activate ]] && source .venv/bin/activate"
+  - "[[ -f venv/bin/activate ]] && source venv/bin/activate"
+  - tmux rename-session -t new-session $(basename $PWD)
+  - reset
+windows:
+  - window_name: nvim
+    panes:
+      - nvim
+  - window_name: scratch
+    panes:
+      - null
+      - null
+  - window_name: qa
+    panes:
+      - null
+      - null
+  - window_name: git
+    panes:
+      - tig
+      - null
