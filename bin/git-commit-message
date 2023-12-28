@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# git-commit-message
+# ==================
+# Show the commit message (subject and body) of the given commit.
+#
+# shfmt --write --language-dialect bash --indent 4 git-commit-message
+#
+ARGS=$(git rev-parse --sq-quote "$@")
+CMD="git log -n 1 --format=%B ${ARGS}"
+eval "${CMD}"
