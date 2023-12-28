@@ -1,0 +1,38 @@
+[user]
+	email = iain@dillingham.me.uk
+	name = Iain Dillingham
+[core]
+	editor = nvim
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[commit]
+	template = ~/.config/git/template
+	gpgSign = true
+	verbose = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[tag]
+	sort = -version:refname
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[diff "zip"]
+	textconv = gunzip -c
+[merge]
+	conflictStyle = zdiff3
+[diff]
+	algorithm = histogram
+[log]
+	date = iso
+[push]
+	autoSetupRemote = true
+	default = upstream
+[alias]
+	commit-message = show --no-patch --format=%B
+[pretty]
+	onelongerline = format:%C(auto)%h %an%d, %s
