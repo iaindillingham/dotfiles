@@ -1,0 +1,11 @@
+bind log @ :/^commit
+bind main <Ctrl-b> @gh browse %(commit)
+bind main <Ctrl-c> @sh -c 'git commit-message %(commit) | tmux load-buffer -'
+
+set line-graphics = auto
+set start-on-head = true
+set tab-size = 4
+
+set main-view-date-local = true
+set main-view-id = true
+set refs-view-date-local = true
