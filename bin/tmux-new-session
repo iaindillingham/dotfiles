@@ -1,0 +1,40 @@
+#!/usr/bin/env bash
+
+start_directory=${1%/}
+
+if test -z "$start_directory"; then
+    echo 'Please supply a start directory'
+    exit 1
+fi
+
+session_name=$(basename "$start_directory" | sed 's/\./-/g')
+
+window_1_name=nvim
+window_2_name=scratch
+window_3_name=pytest
+window_4_name=git
+
+tmux new-session -c "$start_directory" -s "$session_name" -n "$window_1_name" -d
+
+tmux new-window -c "$start_directory" -n "$window_2_name" -a -t "$session_name":"$window_1_name"
+tmux split-window -c "$start_directory" -t "$session_name":"$window_2_name" -v
+
+tmux new-window -c "$start_directory" -n "$window_3_name" -a -t "$session_name":"$window_2_name"
+tmux split-window -c "$start_directory" -t "$session_name":"$window_3_name" -v
+
+tmux new-window -c "$start_directory" -n "$window_4_name" -a -t "$session_name":"$window_3_name"
+tmux split-window -c "$start_directory" -t "$session_name":"$window_4_name" -v
+
+tmux select-window -t "$session_name":"$window_1_name"
+
+# If there is a venv...
+if test -f "$start_directory"/.venv/bin/activate; then
+    # and if the pane wasn't started with a shell command...
+    for idx in $(tmux list-panes -s -t "$session_name" -F '#{window_index}.#{pane_index}' -f "#{==:#{pane_start_command},}"); do
+        # then activate the venv in the pane.
+        tmux send-keys -t "$session_name":"$idx" ' source .venv/bin/activate; clear' C-m
+    done
+fi
+
+tmux send-keys -t "$session_name":"$window_1_name".top ' nvim; clear' C-m
+tmux send-keys -t "$session_name":"$window_4_name".top ' tig; clear' C-m
