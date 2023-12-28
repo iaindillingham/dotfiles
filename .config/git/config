@@ -1,0 +1,54 @@
+[user]
+	email = iain@dillingham.me.uk
+	name = Iain Dillingham
+	signingkey = D27258B3AC8C691A
+[core]
+	editor = nvim
+	pager = diff-so-fancy | less --tabs=4 -RFX
+[commit]
+	template = ~/.config/git/template
+	gpgsign = true
+	verbose = true
+[push]
+	default = simple
+	autoSetupRemote = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
+[init]
+	defaultBranch = main
+[interactive]
+	diffFilter = diff-so-fancy --patch
+[color]
+	ui = true
+[color "diff-highlight"]
+	oldNormal = red
+	oldHighlight = red reverse
+	newNormal = yellow
+	newHighlight = yellow reverse
+[color "diff"]
+	meta = 244
+	frag = 244
+	func = 244
+	commit = 244
+	old = red
+	new = yellow
+	whitespace = 244
+[add "interactive"]
+	useBuiltin = false
+[tag]
+	sort = -version:refname
+[credential]
+	helper = /usr/local/share/gcm-core/git-credential-manager
+[credential "https://dev.azure.com"]
+	useHttpPath = true
+[diff "zip"]
+	textconv = gunzip -c
+[merge]
+	conflictstyle = zdiff3
+[diff]
+	algorithm = histogram
+[log]
+	date = iso
