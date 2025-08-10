@@ -1,0 +1,39 @@
+command = /usr/local/bin/fish --interactive --login
+cursor-style = block
+cursor-style-blink = false
+font-size = 16
+macos-option-as-alt = true
+macos-titlebar-proxy-icon = hidden
+shell-integration-features = no-cursor
+window-padding-x = 4
+window-padding-y = 2
+
+# The following colours are from the default Neovim palette.
+# https://github.com/neovim/neovim/blob/release-0.11/src/nvim/highlight_group.c
+background = #14161b
+foreground = #e0e2ea
+
+# Black
+palette = 0=#eef1f8
+palette = 8=#eef1f8
+# Red
+palette = 1=#ffc0b9
+palette = 9=#ffc0b9
+# Green
+palette = 2=#b3f6c0
+palette = 10=#b3f6c0
+# Yellow
+palette = 3=#fce094
+palette = 11=#fce094
+# Blue
+palette = 4=#a6dbff
+palette = 12=#a6dbff
+# Magenta
+palette = 5=#ffcaff
+palette = 13=#ffcaff
+# Cyan
+palette = 6=#8cf8f7
+palette = 14=#8cf8f7
+# White
+palette = 7=#9b9ea4
+palette = 15=#9b9ea4
