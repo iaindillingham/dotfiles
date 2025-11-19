@@ -1,0 +1,45 @@
+command = /usr/local/bin/fish --interactive --login
+cursor-style = block
+cursor-style-blink = false
+font-size = 16
+initial-command = /usr/local/bin/tmux new-session -s scratch
+macos-option-as-alt = true
+macos-titlebar-proxy-icon = hidden
+shell-integration-features = no-cursor
+window-padding-x = 4
+window-padding-y = 2
+
+background = #171717
+foreground = #E8E8E8
+
+# Black
+palette = 0= #171717
+palette = 8= #171717
+
+# Red
+palette = 1= #ff3d2b
+palette = 9= #ff3d2b
+
+# Green
+palette = 2= #00ae50
+palette = 10=#00ae50
+
+# Yellow
+palette = 3= #b18c00
+palette = 11=#b18c00
+
+# Blue
+palette = 4= #6786ff
+palette = 12=#6786ff
+
+# Magenta
+palette = 5= #eb00e4
+palette = 13=#eb00e4
+
+# Cyan
+palette = 6= #00a3b7
+palette = 14=#00a3b7
+
+# White
+palette = 7= #E8E8E8
+palette = 15=#E8E8E8
