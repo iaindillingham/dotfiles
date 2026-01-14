@@ -1,0 +1,11 @@
+command = /usr/local/bin/fish --interactive --login
+cursor-style = block
+cursor-style-blink = false
+font-size = 16
+initial-command = /usr/local/bin/tmux new-session -s scratch
+macos-option-as-alt = true
+macos-titlebar-proxy-icon = hidden
+shell-integration-features = no-cursor
+theme = Nvim Dark
+window-padding-x = 4
+window-padding-y = 2
