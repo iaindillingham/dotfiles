@@ -1,0 +1,17 @@
+bind log @ :/^commit
+bind main <Ctrl-b> @gh browse %(commit)
+
+set line-graphics = auto
+set start-on-head = true
+set tab-size = 4
+
+set main-view-date-local = true
+set main-view-id = true
+set refs-view-date-local = true
+
+color cursor black yellow
+color cursor-blur black yellow
+color status default default
+color title-focus default default reverse
+color title-blur default default reverse
+color search-result black yellow
