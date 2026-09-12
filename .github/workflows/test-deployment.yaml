@@ -1,0 +1,10 @@
+name: Test Deployment
+on: [push]
+jobs:
+  test-deployment:
+    runs-on: macos-latest
+    steps:
+      - name: Check out the repository
+        uses: actions/checkout@v4
+      - name: Set up a macOS environment
+        run: ./bootstrap.sh
